@@ -28,7 +28,7 @@
         border-radius: 10px;
       }
     }
-  }
+  } // content-section
 
   .inverse-content {
     padding-bottom: 30px;
@@ -70,4 +70,40 @@
     .custom-btn();
     // .custom-btn(red, black);
   }
+
+  @media @mobile {
+    .content-section {
+      flex-direction: column;
+
+      .text-content {
+        width: 99%;
+      }
+
+      .img-content {
+        width: 99%;
+        padding-left: 1%;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+
+    .content-destination {
+      width: 100%;
+    }
+
+    .content-pick {
+      flex-direction: column;
+
+      .destination {
+        width: 90%;
+        margin: 0 auto 30px;
+      }
+    }
+  } // @media mobile
 } // home

@@ -2,11 +2,10 @@
 
 .home .navigation {
   display: flex;
-  // .test();
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  padding-bottom: 40px;
+  padding: 10px 1% 40px 1%;
   .dashed-b-b();
 
   a {
@@ -15,4 +14,16 @@
     font-size: 1.5rem;
     margin: 0 3rem;
   }
-}
+
+  @media @mobile {
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    a {
+      margin: 0 1.5rem;
+    }
+  }
+} //.navigation
