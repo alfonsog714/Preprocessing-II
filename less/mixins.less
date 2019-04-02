@@ -1,1 +1,23 @@
 // Mixins in here
+.test() {
+  border: 1px solid red;
+}
+
+.dashed-b-b() {
+  border-bottom: 2px dashed grey;
+}
+
+.custom-btn(@bg:@button-bg, @c:white ) {
+  background: @bg;
+  color: @c;
+  padding: 15px 1.3rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  margin-top: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background: lighten(@bg, 10%);
+  }
+}
